@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10231d">
+  <title>NOVA IA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><span>NOVA <b>IA</b></span></div>
+      <button id="new-chat" class="new-chat">＋ Nueva conversación</button>
+      <p class="nav-label">HERRAMIENTAS</p>
+      <button class="nav-item active" data-mode="general">◉ <span>Asistente</span></button>
+      <button class="nav-item" data-mode="writing">✎ <span>Redacción</span></button>
+      <button class="nav-item" data-mode="study">⌘ <span>Aprendizaje</span></button>
+      <button class="nav-item" data-mode="work">▤ <span>Trabajo</span></button>
+      <div class="sidebar-bottom"><span class="status-dot"></span> Modelo propio preparado para conectar</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-button" aria-label="Abrir menú">☰</button>
+        <div class="mobile-brand">✦ NOVA IA</div>
+        <div class="model-pill"><span class="status-dot"></span> IA privada · modo de prueba</div>
+      </header>
+      <section class="content">
+        <div id="welcome" class="welcome">
+          <div class="hero-icon">✦</div>
+          <p class="eyebrow">TU ASISTENTE PERSONAL</p>
+          <h1>¿Qué vamos a<br><span>crear hoy?</span></h1>
+          <p class="subheading">Pregunta, escribe, aprende y organiza tus ideas con NOVA IA.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Ayúdame a organizar mis tareas de hoy."><span>▦</span><b>Organizar mi día</b><small>Prioridades y planificación</small></button>
+            <button class="suggestion" data-prompt="Redacta una carta formal y profesional."><span>✎</span><b>Redactar un documento</b><small>Cartas, informes y más</small></button>
+            <button class="suggestion" data-prompt="Explícame un tema difícil paso a paso."><span>⌘</span><b>Aprender algo nuevo</b><small>Explicaciones claras</small></button>
+            <button class="suggestion" data-prompt="Dame ideas creativas para un proyecto."><span>✧</span><b>Crear ideas</b><small>Explora nuevas posibilidades</small></button>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-live="polite"></div>
+      </section>
+      <form id="composer" class="composer">
+        <div class="input-wrap">
+          <textarea id="prompt" rows="1" placeholder="Escribe tu mensaje a NOVA IA..." aria-label="Escribe tu mensaje"></textarea>
+          <div class="composer-tools">
+            <div class="tool-left"><span class="privacy-mark">▣</span><span>Tu espacio de trabajo</span></div>
+            <div class="tool-right">
+              <button type="button" id="voice-input" class="icon-button" title="Dictar mensaje" aria-label="Dictar mensaje">🎙</button>
+              <button type="submit" id="send" class="send-button" aria-label="Enviar mensaje">↑</button>
+            </div>
+          </div>
+        </div>
+        <p class="disclaimer">NOVA IA puede equivocarse. Verifica la información importante.</p>
+      </form>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

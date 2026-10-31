@@ -1,0 +1,14 @@
+{
+  "name": "NOVA IA",
+  "short_name": "NOVA IA",
+  "description": "Asistente de inteligencia artificial en español.",
+  "lang": "es",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "icons": [
+    { "src": "/nova-icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
