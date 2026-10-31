@@ -1,7 +1,7 @@
 // En desarrollo local, si frontend y backend están en el mismo ordenador,
 // el backend se sirve en localhost. Cambia esta dirección por tu dominio HTTPS
-// cuando despliegues NOVA IA.
-const API_BASE = "http://127.0.0.1:8000";
+// Servidor de NOVA IA en Cloudflare
+const API_BASE = "https://nova-ia-api.luislopez4052001.workers.dev";
 let history = [];
 let mode = "general";
 const $ = (id) => document.getElementById(id);
